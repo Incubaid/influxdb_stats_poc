@@ -4,11 +4,13 @@ to get started:
 pip install fabric
 go to this directory
 then do:
+```
 fab deploy.installjs -p rooter -H localhost
 fab -l #lists the different available commands
 
 -p = passwd
 -H = ipaddr
+```
 
 to use docker
 -------------
