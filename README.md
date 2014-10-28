@@ -44,4 +44,7 @@ what
   * install snmp agent (just to prove the point)
   * pull some info from the snmp agent and also dump to heka to get visualized later
 
+installation
+============
 
+[Installation](install/readme)
