@@ -13,7 +13,7 @@ fab -l #lists the different available commands
 to use docker
 -------------
 
-'''
+```python
 on a system where docker is installed in jumpscale env
 jpackage install -n base
 jpackage install -n docker
@@ -31,7 +31,7 @@ ssh localhost -p 9022
 
 #to use fab, passwd does not have to be specified
 fab test.hostname -H localhost:9022
-'''
+```
 
 install system (in docker)
 --------------------------
