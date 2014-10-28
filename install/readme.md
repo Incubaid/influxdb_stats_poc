@@ -12,9 +12,9 @@ fab -l #lists the different available commands
 
 to use docker
 -------------
+on a system where docker is installed in jumpscale env
 
 ```python
-on a system where docker is installed in jumpscale env
 jpackage install -n base
 jpackage install -n docker
 
@@ -35,6 +35,8 @@ fab test.hostname -H localhost:9022
 
 install system (in docker)
 --------------------------
+
+```
 fab deploy.base -H localhost:9022
 
 #make sure that next time we use this docker we don't have to redo the base
@@ -48,10 +50,11 @@ jsdocker new -n mydocker -b despiegk/mytest -p "8086:9086"
 fab deploy.js -H localhost:9022
 fab deploy.influxdb -H localhost:9022
 fab deploy.hekad -H localhost:9022
+```
 
 remarks
 -------
 to restart hekad do
-
+```
 jpackage restart -n hekad
-
+```
