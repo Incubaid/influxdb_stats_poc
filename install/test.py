@@ -4,5 +4,8 @@
 #install influxdb (jpackage)
 #install hekad (jpackage)
 
-import test
-import deploy
+from fabric.api import *
+
+@task
+def hostname():
+    run("cat /etc/hostname")

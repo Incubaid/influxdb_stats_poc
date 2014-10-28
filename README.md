@@ -26,10 +26,22 @@ what
   * in the docker
     * influxdb
     * hekad (collectd sends to these)
+    * collectd dumping to local hekad
 
 * create howto docs
-  * how to install collectd on each platform
+  * how to install collectd on each platform and configure to send to central hekad
   * how to get started with the docker image
   * explain with clear screenshots how to work with grafana & create new dashboards
-  * 
+  * explain how the hekad was configured and why
   
+* what to visualize
+  * iops per disk
+  * disk space per disk (total,used)
+  * network stats
+  * ...
+
+* snmp integration
+  * install snmp agent (just to prove the point)
+  * pull some info from the snmp agent and also dump to heka to get visualized later
+
+
