@@ -13,3 +13,8 @@ docker run \
   google/cadvisor:latest
 ```
 
+this will install cadvisor
+it will be running on port 8080
+
+go to [http://localhost:8080/containers/docker](http://localhost:8080/containers/docker)
+to see the docker monitoring
