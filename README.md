@@ -47,4 +47,4 @@ what
 installation
 ============
 
-[Installation](install/readme)
+[Installation](install/readme.md)
