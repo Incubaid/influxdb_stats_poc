@@ -1,5 +1,4 @@
-influxdb_grafana_poc
-====================
+= influxdb_grafana_poc
 
 == goal demonstrate & document a end2end monitoring flow using influxdb
 
