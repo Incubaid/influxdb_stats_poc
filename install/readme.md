@@ -1,14 +1,11 @@
 to get started:
 ===============
 
-pip install fabric
-go to this directory
-then do:
-fab deploy.installjs -p rooter -H localhost
-fab -l #lists the different available commands
 
--p = passwd
--H = ipaddr
+```
+pip install fabric
+#go to this directory (the install dir of this repo)
+```
 
 to use docker
 -------------
@@ -57,4 +54,14 @@ remarks
 to restart hekad do
 ```
 jpackage restart -n hekad
+```
+
+example fab usage
+-----------------
+```
+fab deploy.installjs -p rooter -H localhost
+fab -l #lists the different available commands
+
+-p = passwd
+-H = ipaddr
 ```
