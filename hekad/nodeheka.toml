@@ -1,0 +1,20 @@
+[hekad]
+#maxprocs = 2
+share_dir = "/opt/heka/share"
+
+[DashboardOutput]
+ticker_interval = 1
+address = "0.0.0.0:4352"
+
+[TcpOutput]
+address = "heka.lxc:5565"
+message_matcher = "Type == 'heka.statmetric'"
+
+[StatAccumInput]
+emit_in_fields = true
+delete_idle_stats = true
+
+[StatsdInput]
+address = ":8125"
+stat_accum_name = "StatAccumInput"
+
