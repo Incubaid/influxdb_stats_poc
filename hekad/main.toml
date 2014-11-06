@@ -1,0 +1,4 @@
+[hekad]
+#maxprocs = 2
+share_dir = "/opt/heka/share"
+

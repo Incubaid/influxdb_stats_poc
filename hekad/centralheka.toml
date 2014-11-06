@@ -1,24 +1,5 @@
-[hekad]
-#maxprocs = 2
-share_dir = "/opt/heka/share"
-
-[PayloadEncoder]
-append_newlines = false
-
 [TcpInput]
 address = ":5565"
 parser_type = "message.proto"
 decoder = "ProtobufDecoder"
-
-[statmetric-influx-encoder]
-type = "SandboxEncoder"
-filename = "lua_encoders/statmetric_influx.lua"
-
-[influx]
-type = "HttpOutput"
-message_matcher = "Type == 'heka.statmetric'"
-address = "http://js.lxc:8086/db/heka/series"
-encoder = "statmetric-influx-encoder"
-username = "heka"
-password = "heka"
 

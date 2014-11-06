@@ -1,0 +1,9 @@
+
+[StatAccumInput]
+emit_in_fields = true
+delete_idle_stats = true
+
+[StatsdInput]
+address = ":8125"
+stat_accum_name = "StatAccumInput"
+
